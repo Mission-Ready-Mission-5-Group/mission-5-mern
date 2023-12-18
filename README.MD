@@ -16,6 +16,7 @@
 
 5) run: `docker-compose up`
 
+6) Done! Client running on: `localhost:5173` Server running on: `localhost:8000`
 
 # DEVELOPMENT (old version)
 
