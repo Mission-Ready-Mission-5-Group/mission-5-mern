@@ -10,7 +10,7 @@
 
 2) Change directory into the repo: `cd mission-5-mern`
 
-3) Install packages for intellisense: `npm install; npm install --prefix ./client; npm install --prefix ./server;`
+3) Install packages for intellisense: `npm install && npm install --prefix ./client && npm install --prefix ./server`
 
 4) To prevent potential conflicts with old docker run: `docker system prune -a`
 
