@@ -3,20 +3,30 @@
 
 ## Setup
 - **requirements**: 
-	- docker installed **and** running in background
+	- docker installed
 	- git installed 
 
 1) Clone repo `git clone https://github.com/Mission-Ready-Mission-5-Group/mission-5-mern.git`
 
 2) Change directory into the repo: `cd mission-5-mern`
 
-3) Install packages for intellisense: `npm install && npm install --prefix ./client && npm install --prefix ./server`
+3) Install packages for intellisense: 
+```
+npm install
+npm install --prefix ./client
+npm install --prefix ./server
 
-4) To prevent potential conflicts with old docker run: `docker system prune -a`
+ ```
 
-5) run: `docker-compose up`
+4) Check that Docker Hub is opened and not paused. You will get an error in the next step if it is not currently running.
 
-6) Done! Client running on: `localhost:5173` Server running on: `localhost:8000`
+5) To prevent potential conflicts with old docker resources run: `docker system prune -a`
+
+6) type `y` to accept
+
+7) run: `docker-compose up`
+
+8) Done! You can view the vite client running on `localhost:5173` on your browser. You can also interact with the server at `localhost:8000` and the mongodb server on `localhost:27017` (though to interact with mongodb you must turn off your mongodb service in Window's services.msc)
 
 # DEVELOPMENT (old version)
 
