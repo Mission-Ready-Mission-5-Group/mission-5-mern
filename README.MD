@@ -3,12 +3,12 @@
 
 ## Setup
 - **requirements**: 
-	- docker installed
+	- docker installed **and** running in background
 	- git installed 
 
-1) Clone repo `git clone <repository-name>`
+1) Clone repo `git clone https://github.com/Mission-Ready-Mission-5-Group/mission-5-mern.git`
 
-2) Change directory into the repo: `cd <repository-name>`
+2) Change directory into the repo: `cd mission-5-mern`
 
 3) Install packages for intellisense: `npm install; npm install --prefix ./client; npm install --prefix ./server;`
 
