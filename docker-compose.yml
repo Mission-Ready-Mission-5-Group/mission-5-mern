@@ -1,0 +1,25 @@
+
+services:
+  clientserver:
+    build: .
+    ports:
+      - 8000:8000
+      - 5173:5173
+    volumes:
+     - /usr/src/app/node_modules
+     - /usr/src/app/client/node_modules
+     - /usr/src/app/server/node_modules
+     - ./client:/usr/src/app/client
+     - ./server:/usr/src/app/server
+    environment:
+     - PROXY_TARGET=127.0.0.1
+     - PORT=8000
+     - MONGO_HOST=db
+     - NODE_ENV=development
+    depends_on:
+      - db
+  db:
+    build: ./db
+    container_name: db
+    ports:
+      - 27017:27017
