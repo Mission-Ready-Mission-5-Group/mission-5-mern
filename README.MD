@@ -18,7 +18,7 @@ npm install --prefix ./server
 
  ```
 
-4) Check that Docker Hub is opened and not paused. You will get an error in the next step if it is not currently running.
+4) Check that Docker Desktop is opened and not paused. You will get an error in the next step if it is not currently running.
 
 5) To prevent potential conflicts with old docker resources run: `docker system prune -a`
 
