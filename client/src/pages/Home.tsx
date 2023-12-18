@@ -5,7 +5,7 @@ import { M_Workout, ZodSchemaWorkoutMongoose } from "../../../server/validatorsm
 import { z } from "zod";
 
 
-const Home = () => {
+var Home = () => {
 	// const [workouts, setWorkouts] = useState<z.infer<typeof ExtendedZodSchemaWorkoutArray>>([])
 	const { m_workouts, dispatch } = useWorkoutContext()
 
@@ -68,6 +68,11 @@ const Home = () => {
 		</>
 	)
 }
+
+
+
+
+// 		fetch("/api/properties/")
 
 
 export default Home
