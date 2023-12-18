@@ -76,6 +76,15 @@ const SchemaProperties = new mongoose.Schema({
 		type: Boolean,
 		require: true
 	},
+	coordinates: {
+		type: [{
+			lattitude: Number,
+			longitude: Number
+		}],
+		require: true
+	}
+}, { timestamps: true, strict: "throw" })
 
-})
+
+export const ModelProperties = mongoose.model("properties", SchemaProperties)
 
