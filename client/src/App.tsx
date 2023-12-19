@@ -4,7 +4,10 @@ import './App.css'
 import Home from './pages/Home'
 import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
-import Rentals from './pages/Rentals'
+import Rentals from './pages/Properties'
+import SelectedProperty from './pages/SelectedProperty'
+import Apply from './pages/Apply'
+import Testing from './pages/Testing'
 
 function App() {
 	return (
@@ -15,8 +18,9 @@ function App() {
 			<Routes>
 				<Route path="/" element={<Home />} />
 				<Route path="/properties" element={<Rentals />} />
-				<Route path="/properties/:id" element={<h1>Properties id</h1>} />
-				{/* <Route path="/SelectedProperty" element={<SelectedProperty />} /> */}
+				<Route path="/properties/:id" element={<h1><SelectedProperty /></h1>} />
+				<Route path="/apply/:id" element={<Apply />} />
+				<Route path="/testing" element={<Testing />} />
 			</Routes>
 		</>
 	);
