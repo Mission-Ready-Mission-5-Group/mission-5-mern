@@ -1,19 +1,21 @@
 
-# DEVELOPMENT using Docker
+# Getting Started
 
-## ❗ Onboarding Notes ❗ 
-### General
+## DEVELOPMENT using Docker
+
+### ❗ Onboarding Notes ❗ 
+#### General
 - If you see any code with or relating to `workouts`, that's old code from the template. Currently it only exists as a means of testing that our client, server and database still work as expected, but we'll phase it out with our own code
 - Remember to `git pull` or `git fetch` before `git push`ing to master branch, to check and resolve any conflicts. Master branch should be free of errors. 
 
-### Server
+#### Server
 - Define your routes in: `server/routers`
 - Schemas, models, validators and types go into: `server/validatorsmodelstypes`
-### Client
+#### Client
 - Define your client pages in `client/src/pages`
 - Define your client components in `client/src/components`
 - If you do any fetch requests from the client to the server do so like this `fetch("/api/properties/")` . Do NOT add the `localhost:8000` part. Don't do this: `fetch("localhost:8000/api/properties/")` as it will cause a network error
-## ⭐ Setup ⭐
+### ⭐ Setup ⭐
 - You have these tools installed: 
 	- Docker 
 	- git  
@@ -42,33 +44,3 @@ npm install --prefix ./server
 8) Done! You can view the vite client running on `localhost:5173` on your browser. You can also interact with the server at `localhost:8000` and the mongodb server on `localhost:27017` (though to interact with mongodb you must turn off your mongodb service in Window's services.msc)
 
 NOTE: Docker sometimes caches resources, so if you've made changes but they don't seem to be appearing try running `docker system prune -a` then `docker-compose up`
-
-# 🚫 DEVELOPMENT without docker (don't use unless you have to) 🚫
-
-## Setup
-- The current setup requires you to use **TWO** separate terminal windows. One for the frontend vite server, and one for the backend express server.
-
-1) Clone repo `git clone`
-2) Create another terminal for your client or server
-3) **Client Setup**
-
-	3.1) move into client folder: `cd client`
-
-	3.2) `npm i`
-
-	3.3) Run dev server: `npm run dev`
-4) **Server Setup**
-
-	4.1) move into backend folder: `cd server`
-
-	4.2) create a `.env` with these settings:
-
-	```ts
-	PORT=8000
-	MONGO_HOST=127.0.0.1
-	NODE_ENV=development
-	```
-
-	4.3) `npm i`
-
-	4.4) Run dev server: `npm run dev`
