@@ -1,7 +1,7 @@
 
 # Getting Started
 
-## DEVELOPMENT using Docker
+## DEVELOPMENT
 
 ### ❗ Onboarding Notes ❗ 
 #### General
