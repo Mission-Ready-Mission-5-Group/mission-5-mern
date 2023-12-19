@@ -17,6 +17,7 @@
 - **requirements**: 
 	- docker installed
 	- git installed 
+	- npm installed 
 
 1) Clone repo `git clone https://github.com/Mission-Ready-Mission-5-Group/mission-5-mern.git`
 
