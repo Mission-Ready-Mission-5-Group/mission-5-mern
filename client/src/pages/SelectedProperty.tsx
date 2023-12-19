@@ -1,11 +1,13 @@
+import { useState } from "react"
 import { useParams } from "react-router-dom"
 
 
 
 const SelectedProperty = () => {
+	const {id} = useParams()
 	return (
 		<>
-		<h1>This is the selected property with id </h1>
+			<h1>Selected property id: {id}</h1>
 		</>
 	)
 }
