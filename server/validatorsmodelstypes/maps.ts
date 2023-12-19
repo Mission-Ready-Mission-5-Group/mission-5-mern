@@ -42,4 +42,4 @@ const SchemaMaps = new mongoose.Schema({
 			}],
 		require: true
 	},
-})
+}, { timestamps: true, strict: "throw" })
