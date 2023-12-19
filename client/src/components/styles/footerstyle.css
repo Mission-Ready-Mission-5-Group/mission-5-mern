@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Albert+Sans:wght@600&display=swap');
 * {
 	font-family: 'Albert Sans', sans-serif;
-    font-size: 15px;
+  font-size: 15px;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 
 .section.padding {
-    padding: 4rem 4rem;
+    padding: 2rem;
 }
 
 .footer {
@@ -87,6 +90,7 @@ a{
 hr{
     color: white !important;
     width: 100%;
+    margin: 2rem 0;
 }
 
 .sb__footer-copyright p{
@@ -94,12 +98,13 @@ hr{
     line-height: 15px;
     color: white;
     font-weight: 600;
+    margin-bottom: 2rem;
 }
 
 @media screen and (max-width: 850px){
     .sb__footer-heading h1{
-        font-size: 44px;
-        line-height: 50px;
+        width: 100%;
+    margin: 1rem 0;
     } 
 }
 
