@@ -3,9 +3,12 @@ import express from "express";
 
 const router = express.Router()
 
+// Route Example: /api/properties/search&location=auckland&gym=1&park=1
+router.get("/search/", (req, res) => {
+	console.log("req.query\t", req.query)
+	const { location, gym, park, supermarket, cinema, swimmingPool } = req.query
 
-router.get("/search", (req, res) => {
-	res.json({ message: "testing" })
+	res.json({ message: "testing2" })
 })
 
 //  "/:id" route must be placed BELOW the other routes to prevent overriding them
