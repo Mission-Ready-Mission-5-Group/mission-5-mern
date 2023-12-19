@@ -1,7 +1,7 @@
 
 # DEVELOPMENT using Docker
 
-## Onboarding Notes
+## ❗ Onboarding Notes ❗ 
 ### General Notes
 - If you see any code with or relating to `workouts`, that's old code from the template. Currently it only exists as a means of testing that our client, server and database still work as expected, but we'll phase it out with our own code
 - Remember to `git pull` or `git fetch` before `git push`ing to master branch, to check and resolve any conflicts. Master branch should be free of errors. 
@@ -45,7 +45,7 @@ npm install --prefix ./server
 
 # DEVELOPMENT (old version)
 
-## Setup
+## ⭐ Setup ⭐
 - The current setup requires you to use **TWO** separate terminal windows. One for the frontend vite server, and one for the backend express server.
 
 1) Clone repo `git clone`
