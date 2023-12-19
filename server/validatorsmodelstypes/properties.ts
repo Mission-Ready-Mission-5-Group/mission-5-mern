@@ -32,7 +32,7 @@ const SchemaProperties = new mongoose.Schema({
 		type: Number,
 		require: true
 	},
-	garages: {
+	garages: { //parkingSpaces??
 		type: Number,
 		require: true
 	},
