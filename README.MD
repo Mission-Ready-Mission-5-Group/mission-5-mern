@@ -35,9 +35,9 @@ npm install --prefix ./server
 
 5) To prevent potential conflicts with old docker resources run: `docker system prune -a`
 
-6) type `y` to accept
+6) Type `y` and press enter to accept
 
-7) run: `docker-compose up` You may get an error when running this command, if so run it again.
+7) Run: `docker-compose up` You may get an error when running this command, if so run it again.
 
 8) Done! You can view the vite client running on `localhost:5173` on your browser. You can also interact with the server at `localhost:8000` and the mongodb server on `localhost:27017` (though to interact with mongodb you must turn off your mongodb service in Window's services.msc)
 
