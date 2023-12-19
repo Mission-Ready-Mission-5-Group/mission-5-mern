@@ -1,7 +1,13 @@
+import "./Properties.css"
+
 const Properties = () => {
 	return (
 		<>
-			<h1>Properties</h1>
+			<div className="properties-page">
+				<h1>Properties</h1>
+
+			</div>
+
 		</>
 	)
 }
