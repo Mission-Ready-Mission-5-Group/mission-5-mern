@@ -14,10 +14,10 @@
 - Define your client components in `client/src/components`
 - If you do any fetch requests from the client to the server do so like this `fetch("/api/properties/")` . Do NOT add the `localhost:8000` part. Don't do this: `fetch("localhost:8000/api/properties/")` as it will cause a network error
 ## ⭐ Setup ⭐
-- **requirements**: 
-	- docker installed
-	- git installed 
-	- npm installed 
+- You have these tools installed: 
+	- Docker 
+	- git  
+	- npm  
 
 1) Clone repo `git clone https://github.com/Mission-Ready-Mission-5-Group/mission-5-mern.git`
 
