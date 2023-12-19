@@ -1,22 +1,23 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Home from './pages/Home'
-import { BrowserRouter, Link, NavLink, Route, Routes } from 'react-router-dom'
-import Navbar from './components/Navbar'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
 	return (
-		<>
-			<Navbar />
-			{/* <img src={viteLogo} className="logo" alt="Vite logo" />
-		<img src={reactLogo} className="logo react" alt="React logo" /> */}
-			<Routes>
-				<Route path="/" element={<Home />} />
-			</Routes>
-		</>
+		<div>
+			<div className='App'>
+				<header id='header'>
+					<Header/>
+				</header>
+			</div>
+			<main>
+
+			</main>
+			<footer id='footer'>
+				<Footer/>	
+			</footer>
+		</div>
 	);
 }
-
 
 export default App
