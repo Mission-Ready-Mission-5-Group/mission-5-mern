@@ -11,8 +11,7 @@
 - Schemas, models, validators and types go into: `server/validatorsmodelstypes`
 ### Client
 - Define your client pages in `client/src/pages`
-- Define your components in `client/src/components`
-- Define your pages in `client/src/pages`
+- Define your client components in `client/src/components`
 - If you do any fetch requests from the client to the server do so like this `fetch("/api/properties/")` . Do NOT add the `localhost:8000` part. Don't do this: `fetch("localhost:8000/api/properties/")` as it will cause a network error
 ## ⭐ Setup ⭐
 - **requirements**: 
