@@ -4,7 +4,7 @@ import { KnownError, errorHandlerMiddleware } from "./utils/errorHandling/error"
 import Zod from "zod";
 import path from "path"
 import { CONFIG } from "./utils/config/config";
-import { routerProperties } from "./routers/Properties";
+import { routerProperties } from "./routers/properties";
 
 // Create express app
 export const app = express();
