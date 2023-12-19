@@ -11,10 +11,11 @@ function App() {
 		<>
 		{/* <img src={viteLogo} className="logo" alt="Vite logo" />
 	<img src={reactLogo} className="logo react" alt="React logo" /> */}
-			<Navbar />
+			{/* <Navbar /> */}
 			<Routes>
 				<Route path="/" element={<Home />} />
-				<Route path="/Rentals" element={<Rentals />} />
+				<Route path="/properties" element={<Rentals />} />
+				<Route path="/properties/:id" element={<h1>Properties id</h1>} />
 				{/* <Route path="/SelectedProperty" element={<SelectedProperty />} /> */}
 			</Routes>
 		</>
