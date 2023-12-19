@@ -18,7 +18,7 @@ const SchemaFacility = new mongoose.Schema({
 }, { timestamps: true, strict: "throw" })
 
 
-const ModelFacilities = mongoose.model("facilities",SchemaFacility)
+export const ModelFacilities = mongoose.model("facilities",SchemaFacility)
 /* 
 ModelMaps.find({latitude:{$gt:5},latitude:{$lt:10}})
 */
