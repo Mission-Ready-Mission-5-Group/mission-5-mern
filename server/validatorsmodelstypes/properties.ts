@@ -77,10 +77,8 @@ const SchemaProperties = new mongoose.Schema({
 		require: true
 	},
 	coordinates: {
-		type: [{
-			lattitude: Number,
-			longitude: Number
-		}],
+		lattitude: Number,
+		longitude: Number,
 		require: true
 	}
 }, { timestamps: true, strict: "throw" })
