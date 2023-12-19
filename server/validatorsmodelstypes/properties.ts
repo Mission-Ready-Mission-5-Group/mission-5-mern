@@ -38,7 +38,7 @@ const SchemaProperties = new mongoose.Schema({
 	},
 	hasNegotiablePrice: {
 		type: Boolean,
-		required: false
+		required: false	// false
 	},
 	price: {
 		type: Number,
@@ -58,9 +58,10 @@ const SchemaProperties = new mongoose.Schema({
 	},
 	tenancyType: {
 		type: String,	//  "fixed" or "periodic"
+		enum: ['fixed', 'periodic'],
 		required: true
 	},
-	availableForm: {
+	availableFrom: {
 		type: Date,
 		required: true
 	},
