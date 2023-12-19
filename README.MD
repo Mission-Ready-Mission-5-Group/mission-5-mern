@@ -1,6 +1,19 @@
 
 # DEVELOPMENT using Docker
 
+## Onboarding Notes
+### General Notes
+- If you see any code with or relating to `workouts`, that's old code from the template. Currently it only exists as a means of testing that our client, server and database still work as expected, but we'll phase it out with our own code
+- Remember to `git pull` or `git fetch` before `git push`ing to master branch, to check and resolve any conflicts. Master branch should be free of errors. 
+
+### Server
+- Define your routes in: `server/routers`
+- Schemas, models, validators and types go into: `server/validatorsmodelstypes`
+### Client
+- Define your client pages in `client/src/pages`
+- Define your components in `client/src/components`
+- Define your pages in `client/src/pages`
+- If you do any fetch requests from the client to the server do so like this `fetch("/api/properties/")` . Do NOT add the `localhost:8000` part. Don't do this: `fetch("localhost:8000/api/properties/")` as it will cause a network error
 ## Setup
 - **requirements**: 
 	- docker installed
