@@ -30,56 +30,56 @@ const SchemaProperties = new mongoose.Schema({
 	},
 	bathrooms: {
 		type: Number,
-		require: true
+		required: true
 	},
 	garages: { //parkingSpaces??
 		type: Number,
-		require: true
+		required: true
 	},
 	hasNegotiablePrice: {
 		type: Boolean,
-		require: false
+		required: false
 	},
 	price: {
 		type: Number,
-		require: true
+		required: true
 	},
 	description: {
 		type: String,
-		require: true
+		required: true
 	},
 	estateAgent: {
 		type: mongoose.Types.ObjectId,
-		require: true
+		required: true
 	},
 	propertyImages: {
 		type: [String],
-		require: true
+		required: true
 	},
 	tenancyType: {
 		type: String,	//  "fixed" or "periodic"
-		require: true
+		required: true
 	},
 	availableForm: {
 		type: Date,
-		require: true
+		required: true
 	},
 	hasElevators: {
 		type: Boolean,
-		require: true
+		required: true
 	},
 	petFriendly: {
 		type: Boolean,
-		require: true
+		required: true
 	},
 	furnished: {
 		type: Boolean,
-		require: true
+		required: true
 	},
 	coordinates: {
 		lattitude: Number,
 		longitude: Number,
-		require: true
+		required: true
 	}
 }, { timestamps: true, strict: "throw" })
 
