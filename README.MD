@@ -14,7 +14,7 @@
 - Define your components in `client/src/components`
 - Define your pages in `client/src/pages`
 - If you do any fetch requests from the client to the server do so like this `fetch("/api/properties/")` . Do NOT add the `localhost:8000` part. Don't do this: `fetch("localhost:8000/api/properties/")` as it will cause a network error
-## Setup
+## ⭐ Setup ⭐
 - **requirements**: 
 	- docker installed
 	- git installed 
@@ -45,7 +45,7 @@ npm install --prefix ./server
 
 # DEVELOPMENT (old version)
 
-## ⭐ Setup ⭐
+## Setup
 - The current setup requires you to use **TWO** separate terminal windows. One for the frontend vite server, and one for the backend express server.
 
 1) Clone repo `git clone`
