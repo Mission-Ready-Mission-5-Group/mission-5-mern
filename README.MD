@@ -42,7 +42,7 @@ npm install --prefix ./server
 
 NOTE: Docker sometimes caches resources, so if you've made changes but they don't seem to be appearing try running `docker system prune -a` then `docker-compose up`
 
-# DEVELOPMENT (old version - don't use unless you have to)
+# DEVELOPMENT without docker (old version - don't use unless you have to)
 
 ## Setup
 - The current setup requires you to use **TWO** separate terminal windows. One for the frontend vite server, and one for the backend express server.
