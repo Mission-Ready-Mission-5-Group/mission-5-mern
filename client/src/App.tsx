@@ -4,7 +4,6 @@ import Footer from "./components/Footer";
 import Rentals from './pages/Properties'
 import SelectedProperty from './pages/SelectedProperty'
 import Apply from './pages/Apply'
-import Testing from './pages/Testing'
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Home from './pages/Home';
 
@@ -26,7 +25,6 @@ function App() {
 					<Route path="/properties" element={<Rentals />} />
 					<Route path="/properties/:id" element={<SelectedProperty />} />
 					<Route path="/apply/:id" element={<Apply />} />
-					<Route path="/testing" element={<Testing />} />
 				</Routes>
 			</BrowserRouter>
 			</main>
