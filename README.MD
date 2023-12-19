@@ -28,6 +28,8 @@ npm install --prefix ./server
 
 8) Done! You can view the vite client running on `localhost:5173` on your browser. You can also interact with the server at `localhost:8000` and the mongodb server on `localhost:27017` (though to interact with mongodb you must turn off your mongodb service in Window's services.msc)
 
+9) Docker sometimes caches resources, so if you've made changes but they don't seem to be appearing try running `docker system prune -a` then `docker-compose up`
+
 # DEVELOPMENT (old version)
 
 ## Setup
