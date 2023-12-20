@@ -5,6 +5,8 @@ import { CONFIG } from "../utils/config/config";
 import fs from "fs"
 import { ModelProperties } from "../validatorsmodelstypes/properties";
 import { propertiesData } from "./propertiesData";
+import { ModelFacilities } from "../validatorsmodelstypes/facilities";
+import { facilityData } from "./facilityData";
 
 
 
@@ -22,6 +24,7 @@ async function init() {
 			.action(async() => {
 				console.log("Attempting to insert properties data")
 				await ModelProperties.insertMany(propertiesData)
+				await ModelFacilities.insertMany(facilityData)
 				console.log("Seed successful")
 			})
 
