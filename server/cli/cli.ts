@@ -1,4 +1,5 @@
-import { program } from "commander"
+// const program = require("commander")
+import {program} from "commander"
 import mongoose from "mongoose";
 import { CONFIG } from "../utils/config/config";
 import fs from "fs"
@@ -14,15 +15,17 @@ async function init() {
 
 		console.log("Connecting to mongodb")
 		await mongoose.connect(`mongodb://${CONFIG.MONGO_HOST}:27017/workouts`)
-
+		console.log("connected to mongodb")
 		program
 			.command("seed")
 			.description("seed data")
-			.action(async () => {
+			.action(async() => {
 				console.log("Attempting to insert properties data")
 				await ModelProperties.insertMany(propertiesData)
 				console.log("Seed successful")
 			})
+
+		program.parse()
 
 	} catch (err) {
 		throw new Error(`${err}`)

@@ -16,10 +16,8 @@ export const propertiesData = [
 		hasElevators: true,
 		petFriendly: true,
 		furnished: true,
-		coordinates: {
-			lattitude: -36.8485,
-			longitude: 174.7633,
-		}
+		lattitude: -36.8485,
+		longitude: 174.7633,
 	},
 	{
 		streetAddress: '456 Oak Avenue',
@@ -38,10 +36,8 @@ export const propertiesData = [
 		hasElevators: false,
 		petFriendly: true,
 		furnished: true,
-		coordinates: {
-			lattitude: -36.8625,
-			longitude: 174.7594,
-		}
+		lattitude: -36.8625,
+		longitude: 174.7594,
 	},
 	{
 		streetAddress: '789 Pine Street',
@@ -60,10 +56,8 @@ export const propertiesData = [
 		hasElevators: false,
 		petFriendly: false,
 		furnished: false,
-		coordinates: {
-			lattitude: -41.2866,
-			longitude: 174.7756,
-		}
+		lattitude: -41.2866,
+		longitude: 174.7756,
 	}
 
 ]
